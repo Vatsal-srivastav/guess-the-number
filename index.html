@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Draw a Digit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Draw a Digit (0–9)</h1>
+  <canvas id="canvas" width="280" height="280"></canvas>
+
+  <div id="controls">
+    <button onclick="predict()">Guess</button>
+    <button onclick="clearCanvas()">Clear</button>
+  </div>
+
+  <div id="guess">Draw a digit and click 'Guess'</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
