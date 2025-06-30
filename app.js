@@ -26,7 +26,7 @@ function clearCanvas() {
 // Load MNIST model
 let model;
 (async () => {
-  model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/tfjs/mnist/model.json');
+  model = await tf.loadLayersModel('https://storage.googleapis.com/tfjs-models/savedmodel/mnist/model.json');
 })();
 
 async function predict() {
